@@ -1,0 +1,15 @@
+/* Import the CSS from vendors */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/basscss/8.1.0/css/basscss.min.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=swap');
+
+/* Variables */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'IBM Plex', monospace;
+}
