@@ -3,6 +3,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/basscss/8.1.0/css/basscss.min.css');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
 
 /* Import Variables */
 
@@ -20,15 +21,33 @@ body{
 
 h1, h2, h3, h4, h5 , h6 {
     font-family: $font-family_heading-text;
+    font-weight: 900;
 }
 
 h1 {
     font-size: 2rem;
 }
 
-/* Main Coontent */
+h2 {
+    font-size: 1.5rem;
+    margin: .4rem 0;
+}
+
+h3 {
+    margin: .8rem 0;
+}
+
+/* Main Content */
 .wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.main-content{
+    flex: 1 1 auto;
+}
+
+.container {
+    padding: 1rem;
 }

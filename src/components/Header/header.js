@@ -4,7 +4,7 @@ import React from "react"
 import headerStyle from "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header className="header">
+  <header className="header container">
     <div className='logo'>
 	<h1>DC<br />CA</h1>
     </div>

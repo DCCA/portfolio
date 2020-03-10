@@ -9,6 +9,9 @@
     align-items: center;
     background-color: $background-header-background;
     color: $color_main-text;
+    h1 {
+	font-weight: 400;
+    }
     a {
 	margin: 0 .4rem;
 	text-transform: uppercase;
@@ -23,7 +26,7 @@
 	}
     }
     .logo {
-	font-size: 2rem;
+	font-size: 1.2rem;
 	border: $border_logo;
 	padding: 0.2rem;
 	margin: 0.4rem;
