@@ -5,11 +5,21 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto&display=swap');
 
 /* Variables */
+$font-family_main-text:'Roboto', sans-serif;
+$font-family_heading-text:'IBM Plex', monospace;
+
+$font-size_root: 16px;
+
+/* Global Styles */
+html {
+    font-size: $font-size_root;
+    min-height: 100vh;
+}
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family_main-text;
 }
 
 h1, h2, h3, h4, h5 , h6 {
-    font-family: 'IBM Plex', monospace;
+    font-family: $font-family_heading-text;
 }

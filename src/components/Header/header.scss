@@ -1,0 +1,35 @@
+/* Variables */
+$background_header-background: #013987;
+$color_main-text: #fac375;
+$color_hover-link: #b8b8b7;
+
+$border_logo: solid 0.1rem #fac375;
+
+/* Style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background_header-background;
+    color: $color_main-text;
+    a {
+	margin: 0 .4rem;
+	text-transform: uppercase;
+	&:link,
+	&:visited,
+	&:active {
+	    color: $color_main-text;
+	    text-decoration: none;
+	}
+	&:hover{
+	    color: $color_hover-link;
+	}
+    }
+    .logo {
+	font-size: 2rem;
+	border: $border_logo;
+	padding: 0.2rem;
+	margin: 0.4rem;
+	line-height: 0.85;
+    }
+}
