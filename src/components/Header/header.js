@@ -6,12 +6,14 @@ import headerStyle from "./header.scss"
 const Header = ({ siteTitle }) => (
   <header className="header container">
     <div className='logo'>
-	<h1>DC<br />CA</h1>
+	<Link to="/">
+	   <h1>DC<br />CA</h1>
+	</Link>
     </div>
     <div>
       <nav>
-        <Link to="/">home</Link>
         <Link to="/portfolio/">portfolio</Link>
+        <Link to="/about/">about</Link>
       </nav>
     </div>
   </header>
