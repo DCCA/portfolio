@@ -21,3 +21,14 @@ body{
 h1, h2, h3, h4, h5 , h6 {
     font-family: $font-family_heading-text;
 }
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Main Coontent */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,16 +1,13 @@
-/* Variables */
-$background_header-background: #013987;
-$color_main-text: #fac375;
-$color_hover-link: #b8b8b7;
+/* Import global variables*/
 
-$border_logo: solid 0.1rem #fac375;
+@import '../../styles/variables';
 
 /* Style */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $background_header-background;
+    background-color: $background-header-background;
     color: $color_main-text;
     a {
 	margin: 0 .4rem;

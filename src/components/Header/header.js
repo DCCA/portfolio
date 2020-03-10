@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import style from "./header.scss"
+import headerStyle from "./header.scss"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="header">
     <div className='logo'>
 	<h1>DC<br />CA</h1>
     </div>
