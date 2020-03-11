@@ -1,3 +1,7 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `DCCA Portfolio`,
@@ -12,6 +16,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    }, 
+    {
+	resolve: "gatsby-source-strapi",
+	options: {
+	    apiURL: process.env.API_URL || "http://localhost:1337",
+	    queryLimit: 1000,
+	    contentTypes: ["repos"],
+	},
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
@@ -30,6 +42,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

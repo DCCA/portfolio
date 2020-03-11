@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "repos",
+  "info": {
+    "name": "repo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "featureImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "repoUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

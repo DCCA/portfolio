@@ -1,20 +1,16 @@
 .portfolio-wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     p {
 	margin: .8rem 0;
     }
-}
-.repo-card {
-    a {
-	color: black;
-	text-decoration: none;
-    }
-    p{
-	margin: 0 .4rem 0 0;
-    }
-    border: solid .1rem black;
-    margin: 1rem 0;
-    text-transform: lowercase;
-    h2 {
-	margin: 0 0 .6rem;
+    .repo-card {
+	margin: 1rem 0;
+	padding: .5rem;
+	.header-image {
+	    height: 10rem;
+	    border-radius: .4rem;
+	}
     }
 }
