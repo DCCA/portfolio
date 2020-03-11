@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { Markdown } from 'react-showdown'
 import { Link, useStaticQuery } from "gatsby"
 import style from '../styles/pages/portfolio.scss'
 
@@ -14,6 +15,7 @@ const Portfolio = () => {
 			id
 			title
 			description
+			repoUrl
 			featureImage {
 			    publicURL
 			}
@@ -26,7 +28,7 @@ const Portfolio = () => {
 	<SEO title="Dev Portfolio" />
 	<div className='portfolio-wrapper'>
 	<h1>/portfolio</h1>
-	<p>this is a list of my repos in github {data.allStrapiRepos.edges[0].node.title}</p>
+	<p>this is a list of my repos in github</p>
 	{(data && data.allStrapiRepos.edges.length > 0 && data.allStrapiRepos.edges.map( repos => {
 	    const backgroundImageStyle = {
 		backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)) ,url(${repos.node.featureImage.publicURL})`,
@@ -38,7 +40,8 @@ const Portfolio = () => {
 		    <div className='header-image' style={backgroundImageStyle}>
 		    </div>
 		    <h2>{repos.node.title}</h2>
-		    <p>{repos.node.description}</p>
+		    <Markdown markup={repos.node.description}/>
+		    <a href={repos.node.repoUrl}>go-to-repo</a>
 		</div>
 	    )
 	}))}

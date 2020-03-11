@@ -15,6 +15,7 @@ html {
     min-height: 100vh;
     background-color: $background_header-background;
     color: $color_main-text;
+    box-sizing: border-box;
 }
 
 body{
