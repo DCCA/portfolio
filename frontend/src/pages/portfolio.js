@@ -8,21 +8,21 @@ import SEO from "../components/seo"
 
 const Portfolio = () => {
     const data = useStaticQuery(graphql`
-	query GetRepos {
-	    allStrapiRepos {
-		edges {
-		    node {
-			id
-			title
-			description
-			repoUrl
-			featureImage {
-			    publicURL
-			}
+    query GetRepos {
+	allStrapiRepos {
+	    edges {
+		node {
+		    id
+		    title
+		    description
+		    repoUrl
+		    featureImage {
+			publicURL
 		    }
 		}
-	    }
-	}`)
+	   }
+	}
+    }`)
     return (
     <Layout>
 	<SEO title="Dev Portfolio" />

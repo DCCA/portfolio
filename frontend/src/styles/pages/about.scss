@@ -1,0 +1,24 @@
+.about-wrapper {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    h1 {
+	font-size: 3rem;
+    }
+    h2 {
+	margin: .8rem 0;
+    }
+    p{
+	line-height: 1.2;
+    }
+    li {
+	&::before {
+	    font-family: "Font Awesome 5 Free";
+	    content: "\f101";
+	    font-weight: 900;
+	    padding-right: .2rem;
+	    margin-left: .4rem;
+	}
+    }
+}

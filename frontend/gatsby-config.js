@@ -22,7 +22,7 @@ module.exports = {
 	options: {
 	    apiURL: process.env.API_URL || "http://localhost:1337",
 	    queryLimit: 1000,
-	    contentTypes: ["repos"],
+	    contentTypes: ["repos", "about"],
 	},
     },
     `gatsby-transformer-sharp`,
