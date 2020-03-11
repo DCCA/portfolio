@@ -1,12 +1,23 @@
+/* Import Variables */
+@import '../_variables.scss';
+
+/* Styles */
 .tagline{
     margin: 2rem 0 3rem;
 }
 .experiences-wrap {
-    margin-top: 2rem;
-    li {
-	padding-top: 1rem;
-	p {
-	    padding-left: .4rem;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color_main-text;
+    h1 {
+	@include for-landscape {
+	    font-size: 60vh;
+	}
+	@include for-portrait {
+	    font-size: 40vw;
 	}
     }
 }

@@ -13,6 +13,7 @@
 html {
     font-size: $font-size_root;
     min-height: 100vh;
+    background-color: $background_header-background;
 }
 
 body{
@@ -45,7 +46,8 @@ h3 {
 }
 
 .main-content{
-    flex: 1 1 auto;
+    flex: 2 1 auto;
+    padding: 0 1rem;
 }
 
 .container {

@@ -1,3 +1,19 @@
+/* Mixins */
+
+@mixin for-landscape {
+    @media (orientation: landscape) {
+	/* landscape styles */
+	@content;
+    }
+}
+
+@mixin for-portrait {
+    @media (orientation: portrait) {
+	/* portrait styles */
+	@content;
+    }
+}
+
 /* Variables */
 $font-family_main-text:'Roboto', sans-serif;
 $font-family_heading-text:'IBM Plex', monospace;
