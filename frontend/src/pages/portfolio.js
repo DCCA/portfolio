@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { Markdown } from 'react-showdown'
+import { CSSTransition } from "react-transition-group"
 import { Link, useStaticQuery } from "gatsby"
-import style from '../styles/pages/portfolio.scss'
+import '../styles/pages/portfolio.scss'
+import '../styles/_animations.scss'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,6 +26,13 @@ const Portfolio = () => {
 	}
     }`)
     return (
+	<CSSTransition 
+	in={true}
+	appear={true}
+	exit={true}
+	timeout={500}
+	classNames="fade"
+	>
     <Layout>
 	<SEO title="Dev Portfolio" />
 	<div className='portfolio-wrapper'>
@@ -41,12 +50,13 @@ const Portfolio = () => {
 		    </div>
 		    <h2>{repos.node.title}</h2>
 		    <Markdown markup={repos.node.description}/>
-		    <a href={repos.node.repoUrl}>go-to-repo</a>
+		    <a href={repos.node.repoUrl} target="_blank">go-to-repo</a>
 		</div>
 	    )
 	}))}
 	</div>
     </Layout>
+    </CSSTransition>
 )}
 
 export default Portfolio
