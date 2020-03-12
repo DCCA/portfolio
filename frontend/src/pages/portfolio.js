@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Markdown } from 'react-showdown'
 import { CSSTransition } from "react-transition-group"
-import { Link, useStaticQuery } from "gatsby"
+import { useStaticQuery } from "gatsby"
 import '../styles/pages/portfolio.scss'
 import '../styles/_animations.scss'
 
@@ -50,7 +50,7 @@ const Portfolio = () => {
 		    </div>
 		    <h2>{repos.node.title}</h2>
 		    <Markdown markup={repos.node.description}/>
-		    <a href={repos.node.repoUrl} target="_blank">go-to-repo</a>
+		    <a href={repos.node.repoUrl} target="_blank" rel="noopener noreferrer">go-to-repo</a>
 		</div>
 	    )
 	}))}
