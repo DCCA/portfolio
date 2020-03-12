@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-prebuild": "cd ./backend && yarn install && yarn strapi build && yarn strapi start &",
-    "heroku-postbuild": "cd ./frontend && npm install && npm run build && npm run serve &"
+    "heroku-prebuild": "cd ./backend && yarn install && yarn strapi build",
+    "heroku-postbuild": "cd ./frontend && npm install && npm run build"
 
   },
   "repository": {
