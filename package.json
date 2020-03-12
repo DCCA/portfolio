@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./backend && yarn strapi build && yarn strapi start",
-    "heroku-postbuild": "cd ./frontend && npm install && gatsby build && gatsby serve"
+    "heroku-postbuild": "cd ./frontend && npm install && npm run build && npm run serve"
 
   },
   "repository": {
